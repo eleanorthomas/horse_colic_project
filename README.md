@@ -1,2 +1,7 @@
-# horse_colic_project
-Horse Colic Dataset exploration project for Term 2 of Udacity Data Scientist Nanodegree
+# Horse Colic Dataset Project README
+
+## Summary and Motivation
+
+## Libraries Used
+
+## Files Included
