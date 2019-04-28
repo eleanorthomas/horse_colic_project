@@ -19,12 +19,21 @@ The motivation for this project is to satisfy requirements for Term 2 of the Uda
 ## Files Included
 
 - Horse_Colic_Project.ipynb -- Jupyter notebook containing write-up of project
+- Horse_Colic_Project.html -- HTML version of Jupyter notebook containing write-up of project
 - horse-colic-dataset/datadict.txt -- Text document summarizing dataset
 - horse-colic-dataset/horse.csv -- CSV file containing dataset
+- README.md -- This README
+- BlogPost.md -- Blog Post containing write-up of the project for a non-technical audience
+- horse-grazing.jpeg -- Horse stock photo for Blog Post 
+- tree.dot -- Visualization of Decision Tree classifier
+- tree.png -- Visualization of Decision Tree classifier 
+- tree2.dot -- Visualization of Decision Tree classifier
+- tree2.png -- Visualization of Decision Tree classifier
 
 ## Summary of Results
 
+The results of this analysis are summarized in a Blog Post, which can be found in this GitHub repo under BlogPost.md. 
 
 ## Acknowledgements
 
-UCI for Horse Colic Dataset
+[UCI for Horse Colic Dataset](https://archive.ics.uci.edu/ml/datasets/Horse+Colic).
