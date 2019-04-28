@@ -8,6 +8,10 @@
 
 Colic is a condition of gastrointestinal upset or abdominal pain in horses. Colic is one of the worst nightmares of any horse owner. Symptoms of colic can include decreased appetite, little to no gut sounds, restlessness, obvious discomfort, pacing, rolling, and kicking at the abdomen. In more severe cases, horses can become violent in their movements or display more severe indications of distress, such as an elevated heart rate and respiratory rate, or other abnormal vital signs.
 
+Colic can have a variety of causes, some of which are much more serious than others. For example: abdominal pain can be the result of gassiness, or "gas colic", which is rarely serious and usually resolves on its own. On the other hand, some types of colic, such as "torsion colic" (where the intestines are twisted, cutting off blood flow) can be very serious and require surgery to resolve.
+
+Still other types, such as "impaction colic" (where the intestine of the horse is blocked by something, sometimes a foreign body) can go either way, depending on a variety of factors. It's important to remember that the owner cannot always know what type of colic a horse is experiencing, which is why it is important to consult a veterinarian who will likely collect a variety of health parameter measurements before making a recommendation for treatment.
+
 In the most mild cases, colic can resolve on its own with or without medical attention. In more severe cases, colic can require invasive and expensive surgery to resolve, and this isn't always feasible or successful, especially in older or weaker horses. It is valuable to understand the signs of colic, particularly those which are associated with the most severe cases, and in relation to normal, healthy levels for a horse.
 
 ## What Can the Data Tell Us?
@@ -19,7 +23,19 @@ Using a machine learning classification technique called "Random Forest Classifi
 
 ## What Does the Data Tell Us?
 
-**TODO: Include summary of results.**
+For the first question we researched, the Random Forest Classifier was able to predict whether a horse would require surgery with ~70-80% accuracy. To get a feel for the features being used to make such a classification, one of the Decision Trees which makes up the Random Forest Classifier was graphically represented, and we can see that one of the strongest indicators that a horse would require surgery was the absence of normal feces:
+
+![tree for classifying surgery/medical](tree.png)
+
+This is certainly consistent with what a horse owner might expect! If the horse's digestive system is still able to effectively pass manure, the colic is not likely to be one of the more severe types of colic, such as an impaction or torsion colic, which are the types most likely to require surgery.
+
+For the next question researched, another Random Forest Classifier was used, trained separately to be able to predict whether a horse would survive the colic with ~70-80% accuracy again. Once again, a visualization was used, and in this case we can see that rectal temperature was one of the most important predictive factors:
+
+![tree for classifying lived/died](tree2.png)
+
+Once again, this jives with what an owner might expect, given that an elevated temperature could indicate complications on top of the colic which will not be resolved with medical treatment alone.
+
+Finally, three of the most commonly measured health parameters by owners were plotted in order to visualize the ranges present in this dataset, for context:
 
 ![plot of vital signs](vital_signs.png)
 
