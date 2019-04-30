@@ -29,6 +29,8 @@ The motivation for this project is to satisfy requirements for Term 2 of the Uda
 - tree.png -- Visualization of Decision Tree classifier 
 - tree2.dot -- Visualization of Decision Tree classifier
 - tree2.png -- Visualization of Decision Tree classifier
+- vital_signs.png -- Plot of categorical vital signs
+- vital_signs_num.png -- Plot of numerical vital signs
 
 ## Summary of Results
 
