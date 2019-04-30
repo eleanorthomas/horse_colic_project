@@ -12425,6 +12425,7 @@ memory usage: 65.5+ KB
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_tree</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">class_names</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Display a graphical representation of the decision tree specified in &#39;estimator&#39; and save .png file&quot;&quot;&quot;</span>
     <span class="c1"># Export as dot file</span>
     <span class="n">export_graphviz</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">out_file</span><span class="o">=</span><span class="n">file_name</span> <span class="o">+</span> <span class="s1">&#39;.dot&#39;</span><span class="p">,</span> 
                     <span class="n">feature_names</span> <span class="o">=</span> <span class="n">features</span><span class="p">,</span>
